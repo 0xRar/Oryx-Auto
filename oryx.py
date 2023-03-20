@@ -18,16 +18,8 @@ def banner():
 
 
 def main():
-    examples = f'''Examples:
-    python3 {sys.argv[0]} -t hackerone.com
-
-    (For boot2root challenges)
-    python3 {sys.argv[0]} -c -t machine.htb
-    '''
-
     parser = argparse.ArgumentParser(
-        epilog=examples,
-        formatter_class=argparse.RawDescriptionHelpFormatter
+        epilog=f'\tExample: \r\npython3 {sys.argv[0]} -t hackerone.com'
     )
 
     parser.add_argument(
